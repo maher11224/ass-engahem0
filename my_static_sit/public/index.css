@@ -1,0 +1,36 @@
+.red {
+    color: red;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* نخلي العناصر تترتب عمودياً */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+svg {
+    overflow: visible;
+    margin: 20px; /* نضيف مسافة بين العناصر */
+}
+
+.wave {
+    stroke: white; /* لون الخط */
+    stroke-width: 4; /* سمك الخط */
+    animation: pulse 2s infinite; /* animation للدوائر */
+}
+
+@keyframes pulse {
+    0% {
+        stroke-width: 4;
+    }
+    50% {
+        stroke-width: 8;
+    }
+    100% {
+        stroke-width: 4;
+    }
+}
