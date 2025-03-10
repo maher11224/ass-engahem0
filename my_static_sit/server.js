@@ -7,7 +7,6 @@ const server = http.createServer((req, res) => {
     let extname = path.extname(filePath);
     let contentType = "text/html";
 
-    // تحديد نوع المحتوى بناءً على الامتداد
     switch (extname) {
         case ".css":
             contentType = "text/css";
@@ -19,10 +18,10 @@ const server = http.createServer((req, res) => {
             contentType = "image/svg+xml";
             break;
         default:
-            contentType = "text/html"; // افتراضيًا HTML
+            contentType = "text/html"; 
     }
 
-    // قراءة الملف وإرساله للمتصفح
+   
     fs.readFile(filePath, (err, content) => {
         if (err) {
             res.writeHead(404, { "Content-Type": "text/plain" });
