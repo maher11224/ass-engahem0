@@ -5,7 +5,7 @@
 body {
     background-color: black;
     display: flex;
-    flex-direction: column; /* نخلي العناصر تترتب عمودياً */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -14,13 +14,13 @@ body {
 
 svg {
     overflow: visible;
-    margin: 20px; /* نضيف مسافة بين العناصر */
+    margin: 20px; 
 }
 
 .wave {
-    stroke: white; /* لون الخط */
-    stroke-width: 4; /* سمك الخط */
-    animation: pulse 2s infinite; /* animation للدوائر */
+    stroke: white; 
+    stroke-width: 4;
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
